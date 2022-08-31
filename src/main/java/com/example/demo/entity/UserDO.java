@@ -19,11 +19,17 @@ public class UserDO
     @TableField(value = "sex")
     private SexEnum sex;
 
-    @TableField(value = "version",update = "%s+1")
-    private Integer version;
-
     @TableField(value = "create_time",fill = FieldFill.INSERT)
     private LocalDateTime createTime;
+
+    /**
+     * 逻辑删除字段
+     */
+    @TableField(value = "is_delete")
+    private Integer isDelete;
+
+    public UserDO() {
+    }
 
     public Long getId()
     {
@@ -55,15 +61,6 @@ public class UserDO
         this.sex = sex;
     }
 
-    public Integer getVersion()
-    {
-        return version;
-    }
-
-    public void setVersion(Integer version)
-    {
-        this.version = version;
-    }
 
     public LocalDateTime getCreateTime()
     {
@@ -76,9 +73,12 @@ public class UserDO
     }
 
     @Override
-    public String toString()
-    {
-        return "UserDO{" + "id=" + id + ", nickname='" + nickname + '\'' + ", sex=" + sex
-               + ", version=" + version + ", createTime=" + createTime + '}';
+    public String toString() {
+        return "UserDO{" +
+                "id=" + id +
+                ", nickname='" + nickname + '\'' +
+                ", sex=" + sex.getName() +
+                ", createTime=" + createTime +
+                '}';
     }
 }
