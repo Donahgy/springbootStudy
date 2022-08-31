@@ -9,7 +9,8 @@ import java.util.Map;
 import java.util.function.Function;
 
 
-public interface IUserService
+public interface IUserService extends IService<UserDO>
 {
-    public List<Map<String,Object>> selectAll();
+
+    List<UserDO> selectAll();
 }

@@ -68,4 +68,10 @@ public class UserController {
     {
         return userService.removeById(id);
     }
+
+    @RequestMapping(value = "/selectAll")
+    public Object selectAll()
+    {
+        return userService.selectAll();
+    }
 }

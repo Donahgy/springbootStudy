@@ -25,6 +25,11 @@ public class MybatisPlusConfig
         return interceptor;
     }
 
+    /**
+     *  全局枚举类型
+     *
+     * @return
+     */
     @Bean
     public MybatisPlusPropertiesCustomizer mybatisPlusPropertiesCustomizer()
     {
