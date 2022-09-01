@@ -14,11 +14,13 @@ public class MyMetaObjectHandler implements MetaObjectHandler
     public void insertFill(MetaObject metaObject)
     {
         this.strictInsertFill(metaObject,"createTime", LocalDateTime.class,LocalDateTime.now());
+        this.strictInsertFill(metaObject,"dept",String.class,"集中管控");
     }
 
     @Override
     public void updateFill(MetaObject metaObject)
     {
         this.strictInsertFill(metaObject,"createTime", LocalDateTime.class,LocalDateTime.now());
+        this.strictInsertFill(metaObject,"dept",String.class,"集中管控");
     }
 }

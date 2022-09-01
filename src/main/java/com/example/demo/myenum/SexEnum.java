@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum SexEnum implements IEnum<Integer>
 {
-    MAX(1,"男"),
+    MAN(1,"男"),
     WOMAN(2,"女");
 
     private Integer code;

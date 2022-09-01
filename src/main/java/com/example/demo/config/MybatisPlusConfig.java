@@ -30,15 +30,15 @@ public class MybatisPlusConfig
      *
      * @return
      */
-    @Bean
-    public MybatisPlusPropertiesCustomizer mybatisPlusPropertiesCustomizer()
-    {
-        return properties -> {
-            GlobalConfig globalConfig = properties.getGlobalConfig();
-            globalConfig.setBanner(false);
-            MybatisConfiguration configuration= new MybatisConfiguration();
-            configuration.setDefaultEnumTypeHandler(MybatisEnumTypeHandler.class);
-            properties.setConfiguration(configuration);
-        };
-    }
+//    @Bean
+//    public MybatisPlusPropertiesCustomizer mybatisPlusPropertiesCustomizer()
+//    {
+//        return properties -> {
+//            GlobalConfig globalConfig = properties.getGlobalConfig();
+//            globalConfig.setBanner(false);
+//            MybatisConfiguration configuration= new MybatisConfiguration();
+//            configuration.setDefaultEnumTypeHandler(MybatisEnumTypeHandler.class);
+//            properties.setConfiguration(configuration);
+//        };
+//    }
 }
