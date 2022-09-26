@@ -9,14 +9,12 @@
         <result property="age" column="age"/>
         <result property="gender" column="gender"/>
         <collection property="parentDOList" column="studentId" ofType="com.example.demo.entity.ParentDO">
-            <id column="id" property="id"/>
             <result property="isMonOrDad" column="isMonOrDad"/>
             <result property="parentGender" column="parentGender"/>
             <result property="parentName" column="parentName"/>
             <result property="studentId" column="studentId"/>
         </collection>
         <collection property="courseDOList" column="studentId" ofType="com.example.demo.entity.CourseDO">
-            <id column="id" property="id"/>
             <result property="studentId" column="studentId"/>
             <result property="courseName" column="courseName"/>
             <result property="courseTeacher" column="courseTeacher"/>
