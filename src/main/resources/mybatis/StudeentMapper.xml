@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.StudentMapper">
+    <resultMap id="result" type="com.example.demo.entity.StudentDO">
+        <id column="id" property="id"/>
+        <result property="studentName" column="studentName"/>
+        <result property="address" column="address"/>
+        <result property="age" column="age"/>
+        <result property="gender" column="gender"/>
+        <collection property="parentDOList" column="studentId" ofType="com.example.demo.entity.ParentDO">
+            <id column="id" property="id"/>
+            <result property="isMonOrDad" column="isMonOrDad"/>
+            <result property="parentGender" column="parentGender"/>
+            <result property="parentName" column="parentName"/>
+            <result property="studentId" column="studentId"/>
+        </collection>
+        <collection property="courseDOList" column="studentId" ofType="com.example.demo.entity.CourseDO">
+            <id column="id" property="id"/>
+            <result property="studentId" column="studentId"/>
+            <result property="courseName" column="courseName"/>
+            <result property="courseTeacher" column="courseTeacher"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectAllData" resultMap="result">
+        select t1.*,t2.*,t3.* from t_student_table t1
+        inner join t_student_course t2 on t2.studentId = t1.id
+        inner join t_student_parent t3 on t3.studentId = t1.id;
+    </select>
+
+</mapper>
