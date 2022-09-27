@@ -1,4 +1,4 @@
-package com.example.demo.myenum;
+package com.example.demo.mybatisplus.myenum;
 
 import com.baomidou.mybatisplus.annotation.IEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;

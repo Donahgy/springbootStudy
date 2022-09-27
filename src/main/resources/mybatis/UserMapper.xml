@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.mapper.UserMapper">
+<mapper namespace="com.example.demo.mybatisplus.mapper.UserMapper">
 
 
-    <select id="selectAll"  resultType="com.example.demo.entity.UserDO">
+    <select id="selectAll"  resultType="com.example.demo.mybatisplus.entity.UserDO">
         select * from user where is_delete != 1
     </select>
 

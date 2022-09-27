@@ -1,4 +1,4 @@
-package com.example.demo.task;
+package com.example.demo.synctask;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;

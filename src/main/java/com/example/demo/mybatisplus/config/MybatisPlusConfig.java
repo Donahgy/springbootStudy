@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.demo.mybatisplus.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.autoconfigure.MybatisPlusPropertiesCustomizer;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@MapperScan("com.example.demo.mapper")
+@MapperScan("com.example.demo.mybatisplus.mapper")
 public class MybatisPlusConfig
 {
 

@@ -1,7 +1,7 @@
-package com.example.demo.mapper;
+package com.example.demo.mybatisplus.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.demo.entity.StudentDO;
+import com.example.demo.mybatisplus.entity.StudentDO;
 
 import java.util.List;
 

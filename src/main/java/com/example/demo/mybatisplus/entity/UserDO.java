@@ -1,10 +1,10 @@
-package com.example.demo.entity;
+package com.example.demo.mybatisplus.entity;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.baomidou.mybatisplus.annotation.*;
-import com.example.demo.myenum.EducationBackgroundEnum;
-import com.example.demo.myenum.SexEnum;
+import com.example.demo.mybatisplus.myenum.EducationBackgroundEnum;
+import com.example.demo.mybatisplus.myenum.SexEnum;
 
 import java.time.LocalDateTime;
 

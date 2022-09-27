@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.mybatisplus.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,20 +9,24 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@TableName(value = "t_student_course")
+@TableName(value = "t_student_parent")
 @AllArgsConstructor
 @NoArgsConstructor
-public class CourseDO {
+public class ParentDO {
 
     @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
 
-    @TableField(value = "courseName")
-    private String courseName;
+    @TableField(value = "parentName")
+    private String parentName;
 
-    @TableField(value = "courseTeacher")
-    private String courseTeacher;
+    @TableField(value = "isMonOrDad")
+    private Integer isMonOrDad;
+
+    @TableField(value = "parentGender")
+    private Integer parentGender;
 
     @TableField(value = "studentId")
     private Integer studentId;
+
 }
