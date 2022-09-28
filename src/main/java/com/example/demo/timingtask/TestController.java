@@ -13,7 +13,6 @@ public class TestController {
 
     private final ScheduleTask scheduleTask;
 
-    @Autowired
     public TestController(ScheduleTask scheduleTask)
     {
         this.scheduleTask = scheduleTask;
@@ -29,13 +28,20 @@ public class TestController {
 //        return "ok";
 //    }
 
-    @PostMapping("/updateMapping1")
+    @PostMapping("/updateMapping")
     public String updateCron1(@RequestParam Map<String,Object> paramMap)
     {
         String cron = String.valueOf(paramMap.get("cron"));
         log.info("new cron :{}", cron);
         this.scheduleTask.setCron(cron);
         log.info("scheduleTask {} ",this.scheduleTask);
+        return "ok";
+    }
+
+    @GetMapping("/updateTimer")
+    public String updateTimer(Long timer) {
+        log.info("new timer :{}", timer);
+        scheduleTask.setTimer(timer);
         return "ok";
     }
 }
