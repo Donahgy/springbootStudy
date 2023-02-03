@@ -1,7 +1,7 @@
 redis:
-  host: 192.168.149.101
+  host: 119.23.75.32
   port: 6379
-  password: unity2.0@wondersoft
+  password: 1234
   timeout: 100000
   lettuce:
     pool:
