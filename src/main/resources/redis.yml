@@ -1,0 +1,11 @@
+redis:
+  host: 192.168.149.101
+  port: 6379
+  password: unity2.0@wondersoft
+  timeout: 100000
+  lettuce:
+    pool:
+    max-idle: 100
+    min-idle: 50
+    max-active: 400
+    max-wait: 1000
