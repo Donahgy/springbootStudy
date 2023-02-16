@@ -43,4 +43,9 @@ public class TestRedisson
             lock.unlock();
         }
     }
+
+    public void say()
+    {
+        System.out.println("依赖注入完成后，调用对应的方法...");
+    }
 }
