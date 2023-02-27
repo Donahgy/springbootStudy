@@ -1,6 +1,6 @@
 redis:
   host: 119.23.75.32
-  port: 6379
+  port: 52001
   password: 1234
   timeout: 100000
   lettuce:
