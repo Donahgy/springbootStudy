@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.*;
 import java.util.concurrent.Future;
@@ -58,53 +59,5 @@ class DemoApplicationTests
         task.doTaskThree();
     }
 
-    public static void main(String[] args) {
-        String json = "[\n" +
-                "{\n" +
-                "\"fieldName\": \"protocol\",\n" +
-                "\"relation\": 0,\n" +
-                "\"value\": \"SMTPS\"\n" +
-                "},\n" +
-                "{\n" +
-                "\"fieldName\": \"protocol\",\n" +
-                "\"relation\": 0,\n" +
-                "\"value\": \"SMTP\"\n" +
-                "},\n" +
-                "{\n" +
-                "\"fieldName\": \"event.match.rule.matchTimes\",\n" +
-                "\"relation\": 3,\n" +
-                "\"value\": \"100\"\n" +
-                "},\n" +
-                "{\n" +
-                "\"fieldName\": \"event.match.rule.matchTimes\",\n" +
-                "\"relation\": 1,\n" +
-                "\"value\": \"10\"\n" +
-                "},\n" +
-                "{\n" +
-                "\"fieldName\": \"event.match.rule.matchSecId\",\n" +
-                "\"relation\": 3,\n" +
-                "\"value\": \"4\"\n" +
-                "},\n" +
-                "{\n" +
-                "\"fieldName\": \"event.match.rule.matchSecId\",\n" +
-                "\"relation\": 1,\n" +
-                "\"value\": \"0\"\n" +
-                "}\n" +
-                "]\n";
-
-        List<Map<String,Object>> mapList = (List<Map<String, Object>>) JSON.parse(json);
-        Map<String,Object> temp = new HashMap<>();
-        mapList.stream()
-                .reduce(null, (x, y) -> {
-                    if (!CollectionUtils.isEmpty(x))
-                    {
-                        if (x.get("fieldName").equals(y.get("fieldName"))) {
-                            temp.put(String.valueOf(x.get("fieldName")),x.get("value") + "," + y.get("value"));
-                        }
-                    }
-                    return y;
-                });
-        System.out.println(temp);
-    }
 
 }
