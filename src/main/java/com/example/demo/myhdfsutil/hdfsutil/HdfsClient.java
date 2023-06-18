@@ -1,6 +1,6 @@
 package com.example.demo.myhdfsutil.hdfsutil;
 
-import com.example.demo.myhdfsutil.commonutil.YmlUtil;
+import com.example.demo.myevent.environmentevent.YmlUtil;
 
 import java.util.Properties;
 
