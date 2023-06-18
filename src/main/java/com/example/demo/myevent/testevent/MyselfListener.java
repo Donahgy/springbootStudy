@@ -1,4 +1,4 @@
-package com.example.demo.myevent;
+package com.example.demo.myevent.testevent;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
