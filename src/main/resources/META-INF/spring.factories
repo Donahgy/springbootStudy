@@ -1,2 +1,3 @@
 org.springframework.context.ApplicationListener=\
-  com.example.demo.myevent.environmentevent.ListenerEnvironmentEvent
+  com.example.demo.myevent.environmentevent.ListenerEnvironmentEvent,\
+  com.example.demo.myevent.testspringstartingevent.MyDefineStartingEventListener
