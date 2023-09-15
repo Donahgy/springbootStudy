@@ -16,7 +16,6 @@ public class DemoApplication
 
     public static void main(String[] args)
     {
-        // ceshi
         SpringApplication.run(DemoApplication.class, args);
     }
 
