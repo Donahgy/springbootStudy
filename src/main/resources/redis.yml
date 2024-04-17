@@ -1,7 +1,7 @@
 redis:
-  host: 119.23.75.32
+  host: 47.109.136.115
   port: 52001
-  password: 1234
+  password: ws-1234
   timeout: 100000
   lettuce:
     pool:

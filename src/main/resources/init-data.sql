@@ -15,18 +15,18 @@ INSERT INTO `rob_necessities`.`t_student_parent` (`id`, `parentName`, `isMonOrDa
 
 
 INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (1, '物理', '潘东', 1);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (2, '化学', '靖哲', 1);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (3, '数学', '郝文涛', 1);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (4, '语文', '李延', 1);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (2, '化学', '郇冲冲', 1);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (3, '数学', '李源杰', 1);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (4, '语文', '黄帅', 1);
 INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (5, '物理', '潘东', 2);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (6, '化学', '靖哲', 2);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (7, '数学', '郝文涛', 2);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (8, '语文', '李延', 2);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (6, '化学', '郇冲冲', 2);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (7, '数学', '李源杰', 2);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (8, '语文', '黄帅', 2);
 INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (9, '物理', '潘东', 3);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (10, '化学', '靖哲', 3);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (11, '数学', '郝文涛', 3);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (12, '语文', '李延', 3);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (10, '化学', '郇冲冲', 3);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (11, '数学', '李源杰', 3);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (12, '语文', '黄帅', 3);
 INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (13, '物理', '潘东', 4);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (14, '化学', '靖哲', 4);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (15, '数学', '郝文涛', 4);
-INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (16, '语文', '李延', 4);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (14, '化学', '郇冲冲', 4);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (15, '数学', '李源杰', 4);
+INSERT INTO `rob_necessities`.`t_student_course` (`id`, `courseName`, `courseTeacher`, `studentId`) VALUES (16, '语文', '黄帅', 4);

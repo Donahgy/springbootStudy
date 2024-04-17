@@ -14,9 +14,9 @@ public class MyDeferredImportSelector implements DeferredImportSelector
     {
         // 根据条件返回要导入的配置类的全限定类名
         if (someConditionIsMet()) {
-            return new String[]{"com.example.MyConfig1"};
+            return new String[]{"com.example.demo.myconfig.MyConfig1"};
         } else {
-            return new String[]{"com.example.MyConfig2"};
+            return new String[]{"com.example.demo.myconfig.MyConfig2"};
         }
     }
 
