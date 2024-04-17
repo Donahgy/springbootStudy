@@ -1,4 +1,4 @@
-package com.example.demo.source.importSelector.adviceModeImportSelector;
+package com.example.demo.sourcecode.adviceModeImportSelector;
 
 import org.springframework.aop.framework.ProxyConfig;
 import org.springframework.context.annotation.AdviceMode;

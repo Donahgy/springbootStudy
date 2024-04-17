@@ -1,4 +1,4 @@
-package com.example.demo.designmode.adaptermode;
+package com.example.demo.definitionannotated.adaptermode;
 
 public class People {
 

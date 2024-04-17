@@ -1,4 +1,4 @@
-package com.example.demo.source.importSelector.deferredImportSelector;
+package com.example.demo.sourcecode.deferredImportSelector;
 
 import org.springframework.context.annotation.DeferredImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
