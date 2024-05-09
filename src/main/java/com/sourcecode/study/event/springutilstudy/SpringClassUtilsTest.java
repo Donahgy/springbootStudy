@@ -1,4 +1,4 @@
-package com.example.demo.springstudy.springutilstudy;
+package com.sourcecode.study.event.springutilstudy;
 
 import org.springframework.util.ClassUtils;
 

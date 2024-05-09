@@ -1,4 +1,6 @@
 spring:
+  backgroundpreinitializer:
+    ignore: true
   redis:
     redisson:
       file: classpath:redisson.yaml
