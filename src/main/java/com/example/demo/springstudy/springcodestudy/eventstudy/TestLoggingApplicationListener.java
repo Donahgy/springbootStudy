@@ -10,7 +10,7 @@
 //import org.springframework.boot.context.logging.LoggingApplicationListener;
 //
 ///**
-// * 该方法的监听事件类型类似于{@link LoggingApplicationListener},
+// * 该方法的监听事件类型类似于{@link LoggingApplicationListener},1
 // * 通过实现 {@link GenericApplicationListener}接口，从而重写
 // * {@link GenericApplicationListener#supportsEventType}方法，
 // * 确定该监听器监听的事件类型，从而在{@link TestLoggingApplicationListener#onApplicationEvent}
