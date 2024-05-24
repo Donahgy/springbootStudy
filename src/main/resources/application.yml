@@ -11,10 +11,12 @@ spring:
     password: ws-123456
   main:
     allow-bean-definition-overriding: true
+  config:
+    additional-location: classpath:/extra-config/
   profiles:
-    active: application-active.yml
-#    default: application-default.yml
-    include: application-include.yml
+    active: active
+    default: default
+    include: include
 
 mybatis:
   mapperLocations: classpath:mybatis/*.xml
