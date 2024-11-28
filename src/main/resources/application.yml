@@ -1,22 +1,2 @@
-spring:
-  backgroundpreinitializer:
-    ignore: true
-  redis:
-    redisson:
-      file: classpath:redisson.yaml
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.109.136.115:52000/pandong_database?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
-    username: root
-    password: ws-123456
-  main:
-    allow-bean-definition-overriding: true
-  config:
-    additional-location: classpath:/extra-config/
-  profiles:
-    active: active
-    default: default
-    include: include
-
-mybatis:
-  mapperLocations: classpath:mybatis/*.xml
+server:
+  port: 8888

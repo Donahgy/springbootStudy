@@ -1,3 +1,0 @@
-app:
-  environment: production
-  featureX: enabled

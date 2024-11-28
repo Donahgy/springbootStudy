@@ -1,1 +1,0 @@
-Beans that are singleton-scoped and set to be pre-instantiated (the default) are created when the container is created.
