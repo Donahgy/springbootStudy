@@ -23,6 +23,7 @@ public class TestController
         source.setNum(1);
         CustomEvent customEvent = new CustomEvent(source);
         customPublisher.publishEvent(customEvent);
+        System.out.println(Thread.currentThread().getName());
         return "test";
     }
 

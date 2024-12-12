@@ -15,6 +15,14 @@ public class CustomListener implements ApplicationListener<CustomEvent>
     public void onApplicationEvent(CustomEvent event)
     {
         Source source = (Source)event.getSource();
+        try
+        {
+            Thread.sleep(60000);
+        }
+        catch (InterruptedException e)
+        {
+            throw new RuntimeException(e);
+        }
         System.out.println(source.getNum());
     }
 }
