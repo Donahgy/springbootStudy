@@ -17,7 +17,7 @@ public class CustomListener implements ApplicationListener<CustomEvent>
         Source source = (Source)event.getSource();
         try
         {
-            Thread.sleep(60000);
+            Thread.sleep(3000);
         }
         catch (InterruptedException e)
         {

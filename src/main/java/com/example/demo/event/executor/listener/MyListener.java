@@ -15,7 +15,7 @@ public class MyListener implements ApplicationListener<MyCustomEvent>
         MySourceObject source = (MySourceObject)event.getSource();
         try
         {
-            Thread.sleep(60000);
+            Thread.sleep(3000);
         }
         catch (InterruptedException e)
         {
